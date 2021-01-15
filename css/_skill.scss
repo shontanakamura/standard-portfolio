@@ -1,0 +1,255 @@
+.skill {
+  background-color: #F2F2F2;
+  padding-top: 13vw;
+  padding-bottom: 18vw;
+  position: relative;
+
+  @media screen and(max-width: 767px) {
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+  }
+
+  &-cording {
+    width: 100vw;
+    z-index: 100;
+    position: relative;
+    margin-bottom: 244px;
+
+    @media screen and(max-width: 767px) {
+      margin-bottom: 50px;
+    }
+
+    &__ttl {
+      text-align: center;
+      position: relative;
+
+
+      @media screen and(max-width: 767px) {
+        margin-bottom: 0;
+      }
+
+      .portfolio-vartical {
+        @include Obj($colorWhite,30rem,700);
+        writing-mode: vertical-lr;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        line-height: 1;
+
+          @media screen and(max-width: 767px) {
+            font-size: 7rem;
+          }
+      }
+      
+      h2 {
+        text-align: center;
+        @include Obj($colorBlack,6rem,700);
+        position: relative;
+        margin-bottom: 116px;
+        @media screen and(max-width: 767px) {
+          font-size: 3rem;
+          margin-bottom: 0;
+        }
+        span {
+          @include Obj($colorGrayd,6rem,700);
+          -webkit-text-stroke: $colorGrayd;
+          -webkit-text-stroke-width: 1px;
+          color: transparent;
+          position: absolute;
+          top: -8%;
+          left: 50.5%;
+          transform: translateX(-50%);
+          z-index: -100;
+          @media screen and(max-width: 767px) {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+    .cordingBox {
+      position: relative;
+      &__top {
+        display: flex;
+        align-items: center;
+        // width: 80%;
+        width: calc((837 / 1280)*100vw);
+        // margin-left: auto;
+        margin: 0 auto;
+        margin-top: 207px;
+        @media screen and(max-width: 767px) {
+          margin-top: 40px;
+        }
+        p:nth-child(1) {
+          font-size: 3.2rem;
+          font-weight: lighter;
+          @media screen and(max-width: 767px) {
+            font-size: 1rem;
+          }
+        }
+        p:nth-child(2) {
+          @include Obj($colorBlack,10rem,700);
+          position: relative;
+          @media screen and(max-width: 767px) {
+            font-size: 4rem;
+          }
+        }
+        p:nth-child(2)::after {
+          content: '件';
+          position: absolute;
+          top: 60%;
+          left: 120%;
+          transform: translateY(-50%);
+          font-size: 2rem;
+          font-weight: lighter;
+          @media screen and(max-width: 767px) {
+            font-size: 1rem;
+          }
+        }
+      }
+      &__bottom {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: relative;
+        z-index: 200;
+        margin-left: 110px;
+        margin-bottom: 244px;
+        width: 90vw;
+        margin: 0 auto;
+        @media screen and(max-width: 767px) {
+          align-items: flex-end;
+          flex-direction: column;
+        }
+        img {
+  
+          width: calc((500/1152.89)*100%);
+          @media screen and(max-width: 767px) {
+            margin-bottom: 30px;
+          }
+        }
+        p {
+          width: 40%;
+          font-size: 2rem;
+          font-weight: lighter;
+          line-height: 1.5;
+          letter-spacing: 0;
+          color: $colorGrayf;
+          @media screen and(max-width: 767px) {
+            width: 48%;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .cordingBox::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: calc((837 / 1280)*100vw);
+      height: 30vw;
+      background-color: #7AD6BB;
+      z-index: -100;
+      @media screen and(max-width: 767px) {
+        
+      }
+    }
+  }//skill-cording
+
+  //disign//
+  &-design {
+    z-index: 100;
+    position: relative;
+
+    @media screen and(max-width: 767px) {
+      margin-bottom: 50px;
+    }
+
+    &__top {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 80vw;
+      margin: 0 auto;
+
+      @media screen and(max-width: 767px) {
+
+      }
+      p:nth-child(1) {
+        font-size: 3.2rem;
+        color: $colorGrayf;
+        font-weight: lighter;
+        @media screen and(max-width: 767px) {
+          font-size: 1rem;
+        }
+      }
+      p:nth-child(2) {
+        @include Obj($colorBlack,10rem,700);
+        position: relative;
+        @media screen and(max-width: 767px) {
+          font-size: 4rem;
+        }
+      }
+      p:nth-child(2)::after {
+        content: '件';
+        position: absolute;
+        top: 60%;
+        left: 120%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        font-weight: lighter;
+        @media screen and(max-width: 767px) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      z-index: 100;
+      margin-left: 110px;
+      width: 90vw;
+      margin: 0 auto;
+      @media screen and(max-width: 767px) {
+        margin-bottom: 50px;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+      }
+      img {
+        width: calc((500/1152.89)*100%);
+        @media screen and(max-width: 767px) {
+          margin-bottom: 30px;
+        }
+      }
+      p {
+        width: 40%;
+        font-size: 2rem;
+        font-weight: lighter;
+        color: $colorGrayf;
+        line-height: 1.5;
+        letter-spacing: 0;
+        @media screen and(max-width: 767px) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }//skill-cording
+  &-design::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    width: calc((837 / 1280)*100vw);
+    height: 30vw;
+    background-color: $colorGrayd;
+    z-index: -100;
+    @media screen and(max-width: 767px) {
+
+    }
+  }
+
+}//skill
+

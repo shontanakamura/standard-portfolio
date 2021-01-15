@@ -1,0 +1,38 @@
+.prolile {
+  padding-top: 263px;
+  padding-bottom: 277px;
+
+    @media screen and(max-width: 767px) {
+      padding-top: 150px;
+      padding-bottom: 0;
+    }
+  &-container {
+    width: 50%;
+    margin: 0 auto;
+    h2 {
+      padding-bottom: 41px;
+      text-align: center;
+      @include Noto($colorBlack,3.2rem,700);
+      font-weight: bold;
+        @media screen and(max-width: 767px) {
+          font-size: 1.6rem;
+        }
+    }
+    &__txt {
+
+        @media screen and(max-width: 767px) {
+        }
+
+      p {
+        padding-bottom: 80px;
+        @include Noto($colorGrayf,3.2rem,1000);
+        font-weight: lighter;
+          @media screen and(max-width: 767px) {
+            font-size: 1rem;
+            padding-bottom: 30px;
+          }
+      }
+    }
+  }
+}//prolile
+

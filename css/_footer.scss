@@ -1,0 +1,7 @@
+.footer {
+  height: 346px;
+  background-color: $colorGrayd;
+  @media screen and(max-width: 767px) {
+    height: 173px;
+}
+}

@@ -1,0 +1,22 @@
+@mixin Obj($fcolor: #fff,$fontSize: 16px, $fontWeight: 700) {
+  color: $fcolor;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: 'objectivebold_italic';
+}
+
+@mixin Noto($fcolor: #fff,$fontSize: 16px, $fontWeight: 700) {
+  color: $fcolor;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+@mixin fz($size: 16) {
+  font-size: ($size / 10) + rem;
+}

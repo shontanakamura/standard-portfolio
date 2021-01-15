@@ -1,0 +1,254 @@
+.about {
+  $this: &;
+  background-color: #F0F0F0;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+    @media screen and(max-width: 767px) {
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+    }
+  &-top {
+    width: 75vw;
+    margin: 0 auto;
+    margin-bottom: 125px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+      @media screen and(max-width: 767px) {
+        width: 80vw;
+        margin-bottom: 20px;
+      }
+    p:nth-child(1) {
+      display: inline-block;
+      font-size: 3.2rem;
+      color: $colorGrayf;
+      font-weight: lighter;
+        @media screen and(max-width: 767px) {
+          font-size: 1rem;
+        }
+    }
+    p:nth-child(2) {
+      display: inline-block;
+      font-size: 10rem;
+      position: relative;
+        @media screen and(max-width: 767px) {
+          font-size: 4rem;
+        }
+    }
+
+    p:nth-child(2)::after {
+      content: '件';
+      position: absolute;
+      top: 60%;
+      left: 120%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: $colorGrayf;
+      font-weight: lighter;
+        @media screen and(max-width: 767px) {
+          font-size: 1rem;
+        }
+    }
+  }
+  &-container {
+    &__txt {
+      // width: calc((1031/1280)*100%);
+      // margin-right: auto;
+      margin-bottom: -69px;
+      display: flex;
+      // justify-content: space-between;
+      justify-content: space-around;
+      align-items: flex-start;
+        @media screen and(max-width: 767px) {
+          margin-bottom: -20px;
+        }
+      #{$this}-one {
+        width: calc((417/1280)*100vw);
+        max-height: 50vh;
+        position: relative;
+        margin-left: 2vw;
+        z-index: 100;
+        @media screen and(max-width: 767px) {
+        }
+      }
+      p {
+        width: calc((481/1028)*100%);
+        font-size: 2rem;
+        color: $colorGrayf;
+        position: relative;
+        z-index: 100;
+          @media screen and(max-width: 767px) {
+            font-size: 1rem;
+          }
+      }
+    }
+    &__img {
+      position: relative;
+      width: 60%;
+      margin: 0 auto;
+      margin-bottom: 141px;
+      display: flex;
+
+        @media screen and(max-width: 767px) {
+          width: calc((1073/1280)*100%);
+          margin: 0;
+          margin-bottom: 20px;
+          margin-left: auto;
+        }
+
+      #{$this}-two {
+        width: calc((360/1280)*100vw);
+        position: absolute;
+        top: 184px;
+        left: 6%;
+          @media screen and(max-width: 767px) {
+            top: 34%;
+          }
+      }
+
+      #{$this}-three {
+        width: calc((360/1280)*100vw);
+        position: absolute;
+        right: -21%;
+        bottom: 0;
+          @media screen and(max-width: 767px) {
+            right: 13%;
+            bottom: 0;
+          }
+      }
+    }
+    &__img::before {
+      content: '';
+      top:0;
+      left: 0;
+      width: calc((525/1280)*100vw);
+      height: 24vw;
+      background-color: #7AD6BB;
+      @media screen and(max-width: 767px) {
+  
+      }
+    }
+    &__img1 {
+      margin-left: auto;
+      margin-bottom: 32px;
+      width: 70vw;
+      width: (593/1280)*100%;
+      display: flex;
+      justify-content: flex-start;
+
+      @media screen and(max-width: 767px) {
+        margin-left: auto;
+        margin-bottom: 32px;
+
+        display: flex;
+        justify-content: flex-start;
+      }
+      img {
+        width: (360/593)*100%;
+        @media screen and(max-width: 767px) {
+        }
+      }
+    }
+    &__img2 {
+      margin-left: auto;
+      margin-bottom: 47px;
+      width: 70vw;
+      width: calc((828/1280)*100%);
+      display: flex;
+      position: relative;
+      @media screen and(max-width: 767px) {
+        margin-left: auto;
+        margin-bottom: 20px;
+        width: 70vw;
+        display: flex;
+        position: relative;
+      }
+      img {
+        position: absolute;
+        top: -32%;
+        left: -40%;
+        width: calc((525/1280)*100vw);
+        @media screen and(max-width: 767px) {
+          position: absolute;
+          top: -54%;
+          left: -26%;
+        }
+      }
+      .txt-box {
+        position: absolute;
+        width: calc((611/838)*100%);
+        bottom: -7%;
+        right: 47%;
+        transform: translateX(50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and(max-width: 767px) {
+          position: absolute;
+          bottom: 0%;
+          right: 50%;
+        }
+        p {
+          display: inline-block;
+          font-size: 3.2rem;
+          color: $colorGrayf;
+          font-weight: lighter;
+          margin-right: 26px;
+            @media screen and(max-width: 767px) {
+              font-size: 1rem;
+              margin-right: 10px;
+            }
+        }
+        span {
+          display: inline-block;
+          font-size: 10rem;
+          position: relative;
+            @media screen and(max-width: 767px) {
+              font-size: 4rem;
+            }
+        }
+        span::after {
+          content: '杯';
+          position: absolute;
+          top: 60%;
+          left: 120%;
+          transform: translateY(-50%);
+          font-size: 2rem;
+          color: $colorGrayf;
+          @media screen and(max-width: 767px) {
+            font-size: 1rem;
+          }
+        }
+      }
+    } //img-2
+    &__img2::before {
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: calc((525/1280)*100vw);
+      height: 24vw;
+      background-color: #7AD6BB;
+      @media screen and(max-width: 767px) {
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 41vw;
+        height: 24vw;
+        background-color: #7AD6BB;
+      }
+    }
+    &__bottom {
+      margin-left: auto;
+      width: ((838/1280)*100%);
+      p {
+        width: ((573/883)*100%);
+        font-size: 2rem;
+        @media screen and(max-width: 767px) {
+          font-size: 1rem;
+        }
+      }
+      @media screen and(max-width: 767px) {
+      }
+    }
+  }
+}
